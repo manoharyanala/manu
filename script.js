@@ -65,4 +65,4 @@ categories.forEach(function(button) {
         input.value = button.textContent;
         form.requestSubmit();
     });
-});
+});console.log("Hello Kalvium");
