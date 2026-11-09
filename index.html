@@ -3,39 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Finder</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#f8f7f3">
+    <meta name="description" content="Northstar is a friendly creative studio building thoughtful brands and websites for growing businesses.">
+    <title>Northstar Studio — Thoughtful design for what's next</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Northstar Studio home">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span>northstar<span class="brand-period">.</span></span>
+        </a>
 
-    <header>
-        <h1>Image Finder</h1>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="#services">What we do</a>
+            <a href="#work">Our work</a>
+            <a href="#about">About us</a>
+            <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
     </header>
 
     <main>
-        <form id="search-form">
-            <label for="search-input" class="sr-only">Search Images</label>
-            <input 
-                type="text" 
-                id="search-input" 
-                placeholder="Search for images..." 
-                required
-            >
-            <button type="submit" id="search-button">Search</button>
-        </form>
+        <section class="hero page-width" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Independent creative studio</p>
+                <h1>Good ideas<br>deserve <span class="serif-accent">great design.</span></h1>
+                <p class="hero-description">We help ambitious people turn big ideas into clear brands and beautiful digital experiences.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#work">Explore our work <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#services">See what we do <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-note">
+                    <div class="avatar-stack" aria-hidden="true">
+                        <span class="avatar avatar-one">J</span>
+                        <span class="avatar avatar-two">M</span>
+                        <span class="avatar avatar-three">A</span>
+                    </div>
+                    <p>A small team for your big next step.</p>
+                </div>
+            </div>
 
-        <div class="categories">
-            <button type="button">Nature</button>
-            <button type="button">Architecture</button>
-            <button type="button">Animals</button>
-            <button type="button">Space</button>
-        </div>
+            <div class="hero-visual">
+                <img
+                    class="hero-image"
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                    alt="A bright, welcoming creative studio filled with plants"
+                    fetchpriority="high"
+                >
+                <div class="image-label">
+                    <span class="image-label-icon" aria-hidden="true">✳</span>
+                    <span>Clear thinking.<br>Considered design.</span>
+                </div>
+                <span class="hero-sparkle" aria-hidden="true">✳</span>
+            </div>
+        </section>
 
-        <div id="status" aria-live="polite"></div>
+        <section class="services section-pad" id="services">
+            <div class="page-width">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">A little bit of everything, on purpose</p>
+                        <h2>Make your next move<br><span class="serif-accent">a good one.</span></h2>
+                    </div>
+                    <p class="section-intro">From the first sketch to the final click, we bring the right people and ideas together to move your business forward.</p>
+                </div>
 
-        <div id="results"></div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+                        <span class="service-icon" aria-hidden="true">✳</span>
+                        <h3>Brand identity</h3>
+                        <p>Find your voice, define your look, and show up consistently wherever your customers find you.</p>
+                        <a class="card-link" href="#contact" aria-label="Ask us about brand identity">Let's talk <span aria-hidden="true">↗</span></a>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+                        <span class="service-icon" aria-hidden="true">⌘</span>
+                        <h3>Website design</h3>
+                        <p>Thoughtful, easy-to-use websites that tell your story and make the next step feel simple.</p>
+                        <a class="card-link" href="#contact" aria-label="Ask us about website design">Let's talk <span aria-hidden="true">↗</span></a>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+                        <span class="service-icon" aria-hidden="true">↗</span>
+                        <h3>Creative direction</h3>
+                        <p>Get a clear plan and a creative partner to help your next idea find its way into the world.</p>
+                        <a class="card-link" href="#contact" aria-label="Ask us about creative direction">Let's talk <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="work section-pad page-width" id="work">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A few things we've put out into the world</p>
+                    <h2>Small team.<br><span class="serif-accent">Big heart.</span></h2>
+                </div>
+                <a class="text-link work-all-link" href="#contact">Have a project in mind? <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <div class="work-grid">
+                <article class="work-card work-card-large">
+                    <a class="work-image-link" href="#contact" aria-label="Discuss a project like Sunday Supply">
+                        <img
+                            src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                            alt="A warm-toned collection of thoughtfully designed everyday products"
+                            loading="lazy"
+                        >
+                        <span class="work-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="work-caption">
+                        <div><h3>Sunday Supply</h3><p>A slower kind of everyday</p></div>
+                        <span class="work-type">Brand · Website</span>
+                    </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <a class="work-image-link" href="#contact" aria-label="Discuss a project like Fieldwork">
+                        <img
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                            alt="A quiet, sunlit interior with natural materials and a vase of flowers"
+                            loading="lazy"
+                        >
+                        <span class="work-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="work-caption">
+                        <div><h3>Fieldwork</h3><p>Room to grow</p></div>
+                        <span class="work-type">Strategy · Website</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section-pad" id="about">
+            <div class="page-width about-inner">
+                <div class="about-mark" aria-hidden="true">✳</div>
+                <div class="about-copy">
+                    <p class="eyebrow">Good people. Good work.</p>
+                    <h2>We're here to make the internet feel a little <span class="serif-accent">more human.</span></h2>
+                    <p>Northstar is a small, independent studio that believes the best work starts with listening. No big egos or off-the-shelf answers. Just thoughtful collaboration and design that feels like you.</p>
+                    <a class="text-link" href="#contact">A little more about us <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="about-image-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                        alt="A shared workspace ready for a collaborative project"
+                        loading="lazy"
+                    >
+                    <span class="about-image-note">Good work happens<br>when we work together.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-pad page-width" id="contact">
+            <div class="contact-card">
+                <div class="contact-sparkle" aria-hidden="true">✳</div>
+                <p class="eyebrow">Your next chapter starts here</p>
+                <h2>Got a good feeling<br><span class="serif-accent">about this?</span></h2>
+                <p>Tell us what you're dreaming up. We'd love to hear about it.</p>
+                <a class="button button-light" href="mailto:hello@northstar.studio">Say hello <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer class="site-footer page-width">
+        <a class="brand" href="#home" aria-label="Northstar Studio home">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span>northstar<span class="brand-period">.</span></span>
+        </a>
+        <p>Thoughtful design for what's next.</p>
+        <span>© <span id="current-year"></span> Northstar Studio</span>
+    </footer>
 </body>
 </html>
